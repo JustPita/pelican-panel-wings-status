@@ -1,0 +1,18 @@
+{
+    "id": "panel-wings-status",
+    "name": "Panel & Wings Status",
+    "author": "JustPita",
+    "version": "1.0.0",
+    "description": "One admin page with a live status card for the panel and for every Wings node: online/maintenance/offline, Wings version, kernel, CPU, memory, disk, load and running servers.",
+    "category": "plugin",
+    "url": "https://github.com/JustPita/pelican-panel-wings-status",
+    "update_url": "https://raw.githubusercontent.com/JustPita/pelican-panel-wings-status/main/update.json",
+    "namespace": "Justpita\\PanelWingsStatus",
+    "class": "PanelWingsStatusPlugin",
+    "panels": [
+        "admin"
+    ],
+    "panel_version": "^1.0.0-beta36",
+    "api_version": 1,
+    "composer_packages": null
+}
