@@ -2,6 +2,8 @@
 
 A Pelican Panel plugin that adds one admin page showing a **live status card for the panel and for every Wings node** — at a glance, on the same screen.
 
+![Panel & Wings Status](screenshot.png)
+
 ## Features
 
 - **One card per machine**: the panel host first, then every node, sorted by name.

@@ -12,7 +12,8 @@
             <x-slot name="heading">{{ $s('heading') }}</x-slot>
             <x-slot name="description">{{ $s('description', ['count' => count($machines), 'time' => now()->format('H:i:s')]) }}</x-slot>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+            {{-- inline grid: utility classes such as md:grid-cols-2 are not always compiled in the panel CSS --}}
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: 1rem;">
                 @forelse($machines as $m)
                     @php
                         [$badge, $label] = !($m['online'] ?? false)
